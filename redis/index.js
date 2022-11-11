@@ -1,14 +1,7 @@
 // import { createClient } from 'redis';
 const redis = require('redis')
-const express = require('express')
-const app = express()
-const port = 3000
 
-app.listen(port, () => {
-        console.log(`Example app listening at http://localhost:${port}`)
-        publishRedisMessage()
-      })
-async function publishRedisMessage() {
+async function testRedis() {
         const client = redis.createClient({
                                             url: 'redis://127.0.0.1:6379'
                                           });
@@ -21,13 +14,15 @@ async function publishRedisMessage() {
                                                                 url: 'redis://127.0.0.1:6379'
                                                               });
         await sub.connect()
-        //  sub.subscribe('MyChannelName',(message) => {
-        //             console.log(message)
-        //         });
+         sub.subscribe('SnapshotResult',(message) => {
+                    console.log(message)
+                });
 
-        setInterval (()=> { client.publish('MyChannelName',new Date().toString())},5000)
-        
+        await client.publish('Test','some value 1051')
+        console.log('after connect')
 
-        
-//         await client.disconnect();
+        await client.set('key', 'value222');
+        const value = await client.get('key');
+        await client.disconnect();
          }
+ testRedis()
