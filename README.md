@@ -33,7 +33,7 @@ make post request (postman for example) to address http://localhost:3000/testpos
 <br />
 look at the server console
 
-# redis example at  folder 
+# redis example at  redis folder 
 <br />
 This is example  of pub sub event
 <br />
