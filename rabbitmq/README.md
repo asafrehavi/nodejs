@@ -8,6 +8,9 @@
 <br />
 #run  node .\send.js
 <br />
-#now you can see at the console of the recieve.js the message that send by send.js
+#The send.js is sending events to c# (specific channel)
 <br />
+#The recieve.js receive events from c# (specific channel)
+<br />
+The other side of the c# can be viewed at the csharp repo
 #thanks to https://www.rabbitmq.com/tutorials/tutorial-one-javascript.html for the example
