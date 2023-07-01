@@ -1,0 +1,12 @@
+{
+  "name": "rabbitmq",
+  "version": "1.0.0",
+  "description": "<br />\r #install rabbit mq by the instructions at https://www.rabbitmq.com/install-windows.html\r <br />\r #run npm i in this repo in order to install npm package\r <br />\r #run  node .\\recieve.js\r <br />\r #run  node .\\send.js\r <br />\r #The send.js is sending events to c# (specific channel)\r <br />\r #The recieve.js receive events from c# (specific channel)\r <br />\r The other side of the c# can be viewed at the csharp repo\r #thanks to https://www.rabbitmq.com/tutorials/tutorial-one-javascript.html for the example",
+  "main": "recieve.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
