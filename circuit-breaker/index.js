@@ -1,4 +1,4 @@
-//thamks to https://www.npmjs.com/package/opossum
+//thanks to https://www.npmjs.com/package/opossum
 
 const CircuitBreaker = require('opossum');
 const http = require('http');
