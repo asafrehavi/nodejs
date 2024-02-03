@@ -13,6 +13,7 @@ you can see at he html file the time send from the server
 This communication type is usefull for server to client communication  it based on http protocol
 <br />
 code  example
+
 <br />
 https://chat.openai.com/share/cc0e51b8-13c3-4019-9286-001a04fcc10b
 <br />
