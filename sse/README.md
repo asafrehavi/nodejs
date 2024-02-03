@@ -1,4 +1,4 @@
-# sse communiction examople example at  redis folder 
+# sse communiction  example at  redis folder 
 <br />
 This is example  of node js server create communication with the client (index.html file at the public directory)
 <br />
